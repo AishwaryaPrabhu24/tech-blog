@@ -1,0 +1,349 @@
+body { 
+  background: #ffffff; 
+  margin: 0; 
+  padding: 0; 
+} /* MAIN ARTICLE WRAPPER (KEEP SAME AS YOUR CURRENT ONE) */ 
+.page { width: 100%; 
+  max-width: 1100px; 
+  margin: 40px auto; 
+  padding: 0 40px; 
+} /* ✨ PREMIUM TITLE FONT */ 
+.title { 
+  font-family: "Poppinns", serif; 
+  font-size: 44px; 
+  font-weight: 700; 
+  margin-bottom: 20px; 
+  text-align: center; 
+  letter-spacing: -0.5px; 
+  color: #111; 
+  line-height: 1.2; 
+} /* ✨ SECTION HEADINGS */ 
+.h2 { 
+  font-family: "Poppins", sans-serif; 
+  font-size: 26px; 
+  font-weight: 600; 
+  margin-top: 40px; 
+  margin-bottom: 12px; 
+  text-align: left; 
+  color: #1a1a1a; 
+} 
+.h3 { 
+  font-family: "Poppims", sans-serif; 
+  font-size: 18px; 
+  font-weight: 600; 
+  margin-top: 22px; 
+  margin-bottom: 8px; 
+  color: #222; 
+} /* ✨ BODY TEXT (READABLE + MODERN) */ 
+.para { 
+  font-family: "Source Serif 4", sans-serif; 
+  font-size: 15px; 
+  line-height: 2; 
+  text-align: justify; 
+  margin-bottom: 16px; 
+  color: #444; 
+  font-weight: 400; 
+} /* ✨ QUOTE (MORE PREMIUM LOOK) */ 
+.quote { 
+  font-family: "Source Serif 4", sans-serif; 
+  margin: 30px 0; 
+  padding: 20px 22px; 
+  border-left: 4px solid #6a11cb; 
+  font-style: italic; 
+  font-size: 17px; 
+  text-align: justify; 
+  background: #f7f7ff; 
+  border-radius: 8px; 
+  color: #333; 
+  font-weight: 500; 
+} /* SMALL IMPROVEMENT */ 
+.para strong { 
+  font-weight: 600; 
+  color: #111; 
+} /* RESPONSIVE */ 
+@media (max-width: 768px) { 
+  .page { padding: 0 20px; } 
+  .title { font-size: 32px; }
+  .h2 { font-size: 22px; } } 
+  
+.industry-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px; 
+  margin: 30px 0; 
+} 
+.industry-card { 
+  background: #ffffff; 
+  border: 1px solid #e8e8e8; 
+  border-radius: 14px; 
+  padding: 22px; 
+  transition: all 0.3s ease; 
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}
+.industry-card:hover { 
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12); 
+} 
+.industry-card h3 { 
+  font-size: 20px; 
+  margin-bottom: 12px; 
+  font-weight: 700; 
+} 
+.industry-card p { 
+  font-size: 15px; 
+  line-height: 1.8; 
+  color: #555; 
+  text-align: justify; 
+}
+.industry-grid { 
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 25px; 
+  margin: 35px 0; 
+} 
+.industry-card { 
+  background: #fff; 
+  border: 1px solid #ececec; 
+  border-radius: 16px; 
+  padding: 24px; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+  transition: 0.3s ease; 
+} 
+  
+.industry-card:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
+} 
+.industry-card h3 { 
+  font-size: 20px; 
+  font-weight: 700; 
+  margin-bottom: 12px; 
+} 
+.industry-card p { 
+  font-size: 15px; 
+  line-height: 1.8; 
+  text-align: justify; 
+  color: #555; 
+}
+
+/* ================= REACTION BOX (MODERN GLASS STYLE) ================= */
+
+.reaction-box {
+  margin-top: 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8faff, #eef2ff);
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+}
+
+.reaction-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.reaction-box p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================= REACTION BOX (AESTHETIC GLASS UI) ================= */
+
+.reaction-box {
+  margin-top: 70px;
+  padding: 35px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* soft animated glow background */
+.reaction-box::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(37,99,235,0.25), transparent 70%);
+  top: -80px;
+  left: -80px;
+  animation: floatGlow 6s infinite ease-in-out;
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translate(0,0); }
+  50% { transform: translate(40px,40px); }
+}
+
+.reaction-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.reaction-box p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* ================= REACTION BUTTONS ================= */
+
+.reactions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.reactions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: none;
+  padding: 14px 20px;
+  border-radius: 16px;
+
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* animated shine effect */
+.reactions button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(37,99,235,0.25),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+.reactions button:hover::before {
+  left: 120%;
+}
+
+.reactions button:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 18px 35px rgba(37,99,235,0.25);
+  color: #2563eb;
+}
+
+/* ACTIVE STATE (important UX upgrade) */
+.reactions button.active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 18px 40px rgba(37,99,235,0.35);
+}
+
+/* emoji pop animation */
+.reactions button:hover span {
+  transform: scale(1.2);
+}
+
+.reactions button span {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+/* ================= SHARE BOX (DARK MODERN STYLE) ================= */
+
+.share-box {
+  margin-top: 50px;
+  padding: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.share-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(37,99,235,0.25), transparent 60%);
+  animation: glowMove 6s infinite linear;
+}
+
+@keyframes glowMove {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.share-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.share-box p {
+  font-size: 14px;
+  color: #cbd5e1;
+  position: relative;
+  z-index: 2;
+}
+
+/* ================= SHARE BUTTONS ================= */
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+
+.share-buttons button {
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.1);
+  color: white;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.share-buttons button:hover {
+  transform: translateY(-4px);
+  background: #2563eb;
+  box-shadow: 0 10px 20px rgba(37,99,235,0.3);
+}

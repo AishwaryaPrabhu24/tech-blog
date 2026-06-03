@@ -1,0 +1,63 @@
+.footer {
+  background: linear-gradient(135deg, #0f172a, #111827);
+  color: white;
+  padding: 35px 15px 10px; /* reduced height */
+}
+
+/* Container */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px; /* reduced spacing */
+  padding-bottom: 20px;
+}
+
+/* Brand */
+.footer-brand h2 {
+  font-size: 22px; /* smaller */
+  color: #38bdf8;
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  color: #cbd5e1;
+  line-height: 1.5;
+  font-size: 14px; /* reduced */
+}
+
+/* Links */
+.footer-links h3 {
+  margin-bottom: 10px;
+  font-size: 16px; /* smaller */
+  color: #f8fafc;
+}
+
+.footer-links a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-bottom: 6px; /* reduced spacing */
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #38bdf8;
+  transform: translateX(3px);
+}
+
+.footer-bottom {
+  padding-bottom: 3px;
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  color: #94a3b8;
+  font-size: 12px; /* smaller */
+}
