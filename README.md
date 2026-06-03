@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project Overview
 
     TechVerse is a modern, responsive technology blog web application built using React. It is designed to explore and present the latest trends in technology such as Artificial Intelligence, Cloud Computing, Cybersecurity, Web Development, Robotics, Quantum Computing, and more.
@@ -76,3 +77,6 @@ Deploy this project using:
     3.Comment section for users
     4.Search and filter functionality
     5.Authentication system (login/signup)
+=======
+# tech-blog
+>>>>>>> 2ac8e19d3677f24af93091a08f1a3ca0a3598e32
