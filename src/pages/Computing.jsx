@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./BlogDetails.css";
-import cloud from "../assets/cloud.jpg";
+import cloud from "../assets/Cloud.jpg";
 import { motion } from "framer-motion";
 import ScrollReveal from "../components/ScrollReveal";
 
