@@ -1,6 +1,6 @@
 import ai from "../assets/ai.jpg";
 
-import cloud from "../assets/cloud.jpg";
+import cloud from "../assets/Cloud.jpg";
 import react from "../assets/react.jpg";
 import web from "../assets/web.jpg";
 
